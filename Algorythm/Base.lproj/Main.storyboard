@@ -16,9 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="65B-Dd-R2l">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="65B-Dd-R2l">
                                 <rect key="frame" x="60" y="184" width="200" height="200"/>
                                 <animations/>
+                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="BEJ-tN-Hcf"/>
                                     <constraint firstAttribute="width" constant="200" id="Eaw-2S-cAg"/>
@@ -106,4 +107,7 @@
             <point key="canvasLocation" x="238" y="414"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="coffee" width="53" height="107"/>
+    </resources>
 </document>
