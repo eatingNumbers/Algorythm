@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3C1A3EC91BC4BF24007F0F98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1A3EC81BC4BF24007F0F98 /* AppDelegate.swift */; };
-		3C1A3ECB1BC4BF24007F0F98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1A3ECA1BC4BF24007F0F98 /* ViewController.swift */; };
+		3C1A3ECB1BC4BF24007F0F98 /* PlaylistMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1A3ECA1BC4BF24007F0F98 /* PlaylistMasterViewController.swift */; };
 		3C1A3ECE1BC4BF24007F0F98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C1A3ECC1BC4BF24007F0F98 /* Main.storyboard */; };
 		3C1A3ED01BC4BF24007F0F98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C1A3ECF1BC4BF24007F0F98 /* Assets.xcassets */; };
 		3C1A3ED31BC4BF24007F0F98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C1A3ED11BC4BF24007F0F98 /* LaunchScreen.storyboard */; };
 		3C1A3EDE1BC4BF24007F0F98 /* AlgorythmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1A3EDD1BC4BF24007F0F98 /* AlgorythmTests.swift */; };
 		3C1A3EE91BC4BF24007F0F98 /* AlgorythmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1A3EE81BC4BF24007F0F98 /* AlgorythmUITests.swift */; };
+		3C1A3EF71BC4C779007F0F98 /* PlaylistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1A3EF61BC4C779007F0F98 /* PlaylistDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		3C1A3EC51BC4BF24007F0F98 /* Algorythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorythm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C1A3EC81BC4BF24007F0F98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3C1A3ECA1BC4BF24007F0F98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C1A3ECA1BC4BF24007F0F98 /* PlaylistMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistMasterViewController.swift; sourceTree = "<group>"; };
 		3C1A3ECD1BC4BF24007F0F98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C1A3ECF1BC4BF24007F0F98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C1A3ED21BC4BF24007F0F98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		3C1A3EE41BC4BF24007F0F98 /* AlgorythmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorythmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C1A3EE81BC4BF24007F0F98 /* AlgorythmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorythmUITests.swift; sourceTree = "<group>"; };
 		3C1A3EEA1BC4BF24007F0F98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C1A3EF61BC4C779007F0F98 /* PlaylistDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				3C1A3EC81BC4BF24007F0F98 /* AppDelegate.swift */,
-				3C1A3ECA1BC4BF24007F0F98 /* ViewController.swift */,
+				3C1A3ECA1BC4BF24007F0F98 /* PlaylistMasterViewController.swift */,
+				3C1A3EF61BC4C779007F0F98 /* PlaylistDetailViewController.swift */,
 				3C1A3ECC1BC4BF24007F0F98 /* Main.storyboard */,
 				3C1A3ECF1BC4BF24007F0F98 /* Assets.xcassets */,
 				3C1A3ED11BC4BF24007F0F98 /* LaunchScreen.storyboard */,
@@ -255,7 +258,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C1A3ECB1BC4BF24007F0F98 /* ViewController.swift in Sources */,
+				3C1A3EF71BC4C779007F0F98 /* PlaylistDetailViewController.swift in Sources */,
+				3C1A3ECB1BC4BF24007F0F98 /* PlaylistMasterViewController.swift in Sources */,
 				3C1A3EC91BC4BF24007F0F98 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
