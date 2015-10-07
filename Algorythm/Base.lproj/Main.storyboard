@@ -16,22 +16,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aby-tv-Ucx">
-                                <rect key="frame" x="137" y="269" width="46" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="65B-Dd-R2l">
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
                                 <animations/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                </state>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="BEJ-tN-Hcf"/>
+                                    <constraint firstAttribute="width" constant="200" id="Eaw-2S-cAg"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aby-tv-Ucx">
+                                <rect key="frame" x="137" y="392" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="19u-Wo-OMq" kind="push" identifier="showPlaylistDetail" id="qJ0-hP-oox"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="65B-Dd-R2l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dxb-Q7-DXD"/>
                             <constraint firstItem="aby-tv-Ucx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q6G-mL-t7r"/>
-                            <constraint firstItem="aby-tv-Ucx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="c5q-38-R8a"/>
+                            <constraint firstItem="65B-Dd-R2l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Tbb-tT-X0D"/>
+                            <constraint firstItem="aby-tv-Ucx" firstAttribute="top" secondItem="65B-Dd-R2l" secondAttribute="bottom" constant="8" id="eYF-i2-vL2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Playlists" id="z9i-fM-XKu"/>
