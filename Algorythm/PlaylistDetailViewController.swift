@@ -10,15 +10,20 @@ import UIKit
 
 class PlaylistDetailViewController: UIViewController {
 
-    
-
     var playlist: Playlist?
     
+    @IBOutlet weak var playlistCoverImage: UIImageView!
+    @IBOutlet weak var playlistTitle: UILabel!
+    @IBOutlet weak var playlistDescription: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         if playlist != nil {
-            buttonPressLabel.text = playlist!.title
+            playlistCoverImage.image = playlist!.icon
+            playlistCoverImage.backgroundColor = playlist!.backgroundColor
+            playlistTitle.text = playlist!.title
+            playlistDescription.text = playlist!.description
         }
     }
 
