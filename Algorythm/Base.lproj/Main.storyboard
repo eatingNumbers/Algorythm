@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Playlists-->
@@ -26,29 +27,17 @@
                                     <constraint firstAttribute="width" constant="200" id="Eaw-2S-cAg"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aby-tv-Ucx">
-                                <rect key="frame" x="137" y="392" width="46" height="30"/>
-                                <animations/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="19u-Wo-OMq" kind="push" identifier="showPlaylistDetail" id="qJ0-hP-oox"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.1764705882352941" green="0.18431372549019609" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="65B-Dd-R2l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dxb-Q7-DXD"/>
-                            <constraint firstItem="aby-tv-Ucx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q6G-mL-t7r"/>
                             <constraint firstItem="65B-Dd-R2l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Tbb-tT-X0D"/>
-                            <constraint firstItem="aby-tv-Ucx" firstAttribute="top" secondItem="65B-Dd-R2l" secondAttribute="bottom" constant="8" id="eYF-i2-vL2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Playlists" id="z9i-fM-XKu"/>
                     <connections>
                         <outlet property="PlaylistImageView0" destination="65B-Dd-R2l" id="rOz-sE-3UG"/>
-                        <outlet property="aButton" destination="aby-tv-Ucx" id="nes-qm-v7Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -110,20 +99,71 @@
                                     <constraint firstItem="cPX-me-aKb" firstAttribute="top" secondItem="1Dp-Oy-v3d" secondAttribute="bottom" constant="8" symbolic="YES" id="xam-TG-BfV"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMx-r8-Rdi">
+                                <rect key="frame" x="16" y="374" width="46" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59646853885135132" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artists Number 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNm-7R-hfx">
+                                <rect key="frame" x="16" y="403" width="124" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="3LR-hd-mW2"/>
+                                    <constraint firstAttribute="height" constant="21" id="vwe-D5-Ycm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59646853889999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artists Number 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIa-l1-hfb">
+                                <rect key="frame" x="16" y="432" width="124" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="P2r-oJ-5ut"/>
+                                    <constraint firstAttribute="height" constant="21" id="WOZ-OM-vyC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59646853889999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artists Number 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBo-A5-fsG">
+                                <rect key="frame" x="16" y="461" width="124" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="9ou-LQ-EsA"/>
+                                    <constraint firstAttribute="width" constant="124" id="MTw-VZ-oS1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59646853889999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="mMx-r8-Rdi" firstAttribute="leading" secondItem="upm-qS-F5k" secondAttribute="leadingMargin" id="525-UZ-VWe"/>
+                            <constraint firstItem="BNm-7R-hfx" firstAttribute="top" secondItem="mMx-r8-Rdi" secondAttribute="bottom" constant="8" symbolic="YES" id="9BJ-Vd-RUy"/>
                             <constraint firstItem="4Zj-ME-2lw" firstAttribute="bottom" secondItem="4c9-Vh-hNp" secondAttribute="bottom" id="MAX-fv-E6j"/>
+                            <constraint firstItem="pIa-l1-hfb" firstAttribute="top" secondItem="BNm-7R-hfx" secondAttribute="bottom" constant="8" id="Q2L-Ij-AQ8"/>
+                            <constraint firstItem="pIa-l1-hfb" firstAttribute="leading" secondItem="upm-qS-F5k" secondAttribute="leading" constant="16" id="WRo-Nf-K1D"/>
+                            <constraint firstItem="mMx-r8-Rdi" firstAttribute="top" secondItem="4Zj-ME-2lw" secondAttribute="bottom" constant="20" id="b2V-gr-RPx"/>
                             <constraint firstItem="4c9-Vh-hNp" firstAttribute="top" secondItem="DB8-DI-4u9" secondAttribute="bottom" id="cii-ya-DwC"/>
                             <constraint firstItem="4c9-Vh-hNp" firstAttribute="leading" secondItem="upm-qS-F5k" secondAttribute="leading" id="dLJ-Qh-rbi"/>
+                            <constraint firstItem="bBo-A5-fsG" firstAttribute="top" secondItem="pIa-l1-hfb" secondAttribute="bottom" constant="8" id="qVe-pO-Lv1"/>
                             <constraint firstAttribute="trailing" secondItem="4c9-Vh-hNp" secondAttribute="trailing" id="qqa-sF-rbp"/>
                             <constraint firstAttribute="trailing" secondItem="4Zj-ME-2lw" secondAttribute="trailing" id="sLO-g7-9s9"/>
                             <constraint firstItem="4Zj-ME-2lw" firstAttribute="leading" secondItem="upm-qS-F5k" secondAttribute="leading" id="wPY-bI-aX8"/>
+                            <constraint firstItem="BNm-7R-hfx" firstAttribute="leading" secondItem="mMx-r8-Rdi" secondAttribute="leading" id="yih-Tz-sdt"/>
+                            <constraint firstItem="bBo-A5-fsG" firstAttribute="leading" secondItem="upm-qS-F5k" secondAttribute="leading" constant="16" id="zeC-a8-pgV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Artists" id="gRI-On-WIq"/>
                     <connections>
+                        <outlet property="playlistArtist0" destination="BNm-7R-hfx" id="mqb-ye-1kf"/>
+                        <outlet property="playlistArtist1" destination="bBo-A5-fsG" id="ezU-Lg-xEi"/>
+                        <outlet property="playlistArtist2" destination="bBo-A5-fsG" id="3OK-sq-EDx"/>
                         <outlet property="playlistCoverImage" destination="4c9-Vh-hNp" id="BcU-TM-NMh"/>
                         <outlet property="playlistDescription" destination="cPX-me-aKb" id="3vG-ii-YT0"/>
                         <outlet property="playlistTitle" destination="1Dp-Oy-v3d" id="Dzb-Rf-eyt"/>

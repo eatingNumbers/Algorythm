@@ -10,14 +10,13 @@ import UIKit
 
 class PlaylistMasterViewController: UIViewController {
 
-    @IBOutlet weak var aButton: UIButton!
+
     
     @IBOutlet weak var PlaylistImageView0: UIImageView!
    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        aButton.setTitle("Press me", forState: .Normal)
         let playlist = Playlist(index: 0)
         PlaylistImageView0.image = playlist.icon
         
