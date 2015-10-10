@@ -30,17 +30,27 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.1764705882352941" green="0.18431372549019609" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="65B-Dd-R2l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dxb-Q7-DXD"/>
                             <constraint firstItem="65B-Dd-R2l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Tbb-tT-X0D"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="TBE-YD-15g" appends="YES" id="Vb2-PR-NHf"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Playlists" id="z9i-fM-XKu"/>
                     <connections>
                         <outlet property="PlaylistImageView0" destination="65B-Dd-R2l" id="rOz-sE-3UG"/>
+                        <segue destination="19u-Wo-OMq" kind="push" identifier="showPlaylistDetailSegue" id="DOh-Wc-QlG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="TBE-YD-15g">
+                    <connections>
+                        <action selector="showPlaylistDetail:" destination="BYZ-38-t0r" id="oNK-dj-Os4"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="770" y="414"/>
         </scene>
@@ -76,11 +86,11 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPX-me-aKb">
-                                        <rect key="frame" x="20" y="39" width="280" height="66"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPX-me-aKb">
+                                        <rect key="frame" x="20" y="39" width="280" height="73"/>
                                         <animations/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="66" id="AHf-gE-00U"/>
+                                            <constraint firstAttribute="height" constant="73" id="AHf-gE-00U"/>
                                         </constraints>
                                         <string key="text">This is a collection of my favorite songs to listen to when working out. It's got everything from fast cardio to power workout tunes. All the right fuel to get your engine going.</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
@@ -163,7 +173,7 @@
                     <connections>
                         <outlet property="playlistArtist0" destination="BNm-7R-hfx" id="mqb-ye-1kf"/>
                         <outlet property="playlistArtist1" destination="bBo-A5-fsG" id="ezU-Lg-xEi"/>
-                        <outlet property="playlistArtist2" destination="bBo-A5-fsG" id="3OK-sq-EDx"/>
+                        <outlet property="playlistArtist2" destination="bBo-A5-fsG" id="s6K-Oq-acV"/>
                         <outlet property="playlistCoverImage" destination="4c9-Vh-hNp" id="BcU-TM-NMh"/>
                         <outlet property="playlistDescription" destination="cPX-me-aKb" id="3vG-ii-YT0"/>
                         <outlet property="playlistTitle" destination="1Dp-Oy-v3d" id="Dzb-Rf-eyt"/>
