@@ -10,15 +10,23 @@ import UIKit
 
 class PlaylistMasterViewController: UIViewController {
 
-
+    var playlistsArray: [UIImageView] = []
     
     @IBOutlet weak var PlaylistImageView0: UIImageView!
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        playlistsArray.append(PlaylistImageView0)
         
-        let playlist = Playlist(index: 0)
-        PlaylistImageView0.image = playlist.icon
+        for index in 0..<playlistsArray.count {
+            let playlist = Playlist(index: index)
+            let playlistImageView = playlistsArray[index]
+            
+            playlistImageView.image = playlist.icon
+            playlistImageView.backgroundColor = playlist.backgroundColor
+        }
+        
+        
         
     }
 
